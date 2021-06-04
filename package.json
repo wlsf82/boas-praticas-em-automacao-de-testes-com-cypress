@@ -1,0 +1,20 @@
+{
+  "name": "boas-praticas-em-automacao-de-testes-com-cypress",
+  "version": "1.0.0",
+  "description": "Boas práticas em automação de testes com Cypress",
+  "scripts": {
+    "test": "cypress run",
+    "cy:open": "cypress open"
+  },
+  "keywords": [
+    "cypress.io",
+    "talking about testing",
+    "good practices"
+  ],
+  "author": "Walmyr Filho <wlsf82@gmail.com> (https://walmyr.dev)",
+  "license": "MIT",
+  "devDependencies": {
+    "cypress": "^7.5.0",
+    "faker": "^5.5.3"
+  }
+}
