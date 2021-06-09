@@ -7,17 +7,10 @@ describe('Code duplication bad practice - Sample 2', () => {
 
     cy.visit('https://hackernews-seven.vercel.app')
     cy.wait('@getStories')
-
-    cy.get('input[type="text"]')
-      .should('be.visible')
-      .and('have.value', 'redux')
-      .as('searchField')
-      .clear()
   })
 
   it('searches for "reactjs"', () => {
-    cy.get('@searchField')
-      .type('reactjs{enter}')
+    cy.search('reactjs')
 
     cy.wait('@getStories')
 
@@ -26,8 +19,7 @@ describe('Code duplication bad practice - Sample 2', () => {
   })
 
   it('searches for "vuejs"', () => {
-    cy.get('@searchField')
-      .type('vuejs{enter}')
+    cy.search('vuejs')
 
     cy.wait('@getStories')
 
