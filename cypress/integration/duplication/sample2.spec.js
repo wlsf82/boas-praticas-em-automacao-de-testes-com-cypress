@@ -9,21 +9,16 @@ describe('Code duplication bad practice - Sample 2', () => {
     cy.wait('@getStories')
   })
 
-  it('searches for "reactjs"', () => {
-    cy.search('reactjs')
+  const terms = ['reactjs', 'vuejs', 'angularjs']
 
-    cy.wait('@getStories')
+  terms.forEach(term => {
+    it(`searches for "${term}"`, () => {
+      cy.search(term)
 
-    cy.get('.table-row')
-      .should('have.length', 100)
-  })
+      cy.wait('@getStories')
 
-  it('searches for "vuejs"', () => {
-    cy.search('vuejs')
-
-    cy.wait('@getStories')
-
-    cy.get('.table-row')
-      .should('have.length', 100)
+      cy.get('.table-row')
+        .should('have.length', 100)
+    })
   })
 })
