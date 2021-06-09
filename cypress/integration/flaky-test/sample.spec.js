@@ -2,7 +2,8 @@ describe('Flaky tests bad practice', () => {
   beforeEach(() => {
     cy.intercept(
       'GET',
-      '**/search**'
+      '**/search**',
+      { fixture: 'stories' }
     ).as('getStories')
 
     cy.visit('https://wlsf82-hacker-stories.web.app')
