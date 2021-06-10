@@ -13,20 +13,26 @@ describe('Wrong abstraction bad practice', () => {
     cy.search('cypress')
     cy.wait('@getStories')
 
-    cy.assertResults()
+    cy.get('.table-row').then(rows => {
+      expect(rows.length).to.be.at.least(1)
+    })
   })
 
   it('uses custom command for assertion just for the sake of reusability', () => {
     cy.search('selenium')
     cy.wait('@getStories')
 
-    cy.assertResults()
+    cy.get('.table-row').then(rows => {
+      expect(rows.length).to.be.at.least(1)
+    })
   })
 
   it('uses custom command for assertion just for the sake of reusability', () => {
     cy.search('playwright')
     cy.wait('@getStories')
 
-    cy.assertResults()
+    cy.get('.table-row').then(rows => {
+      expect(rows.length).to.be.at.least(1)
+    })
   })
 })
