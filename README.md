@@ -2,7 +2,7 @@
 
 👋 Seja bem vinda(o)!
 
-É muito bom té-la(o) aqui. Tenho certeza que você vai adorar este curso. ❤️
+É muito bom tê-la(o) aqui. Tenho certeza que você vai adorar este curso. ❤️
 
 ## O que você vai aprender
 
