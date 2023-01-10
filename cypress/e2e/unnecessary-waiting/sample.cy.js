@@ -1,4 +1,4 @@
-const faker = require('faker')
+import { faker } from '@faker-js/faker'
 
 describe('Unnecessary waiting bad practice', () => {
   const randomDestination = Math.floor(Math.random() * 15) + 1

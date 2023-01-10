@@ -1,3 +1,5 @@
+import { faker } from '@faker-js/faker'
+
 describe('Flaky tests bad practice', () => {
   beforeEach(() => {
     cy.intercept(
@@ -11,8 +13,6 @@ describe('Flaky tests bad practice', () => {
 
   Cypress._.times(10, () => {
     it('shows a max of 5 buttons for the last searched terms', () => {
-      const faker = require('faker')
-
       Cypress._.times(6, () => {
         cy.search(faker.random.word())
       })

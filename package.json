@@ -14,7 +14,7 @@
   "author": "Walmyr Filho <wlsf82@gmail.com> (https://walmyr.dev)",
   "license": "MIT",
   "devDependencies": {
-    "cypress": "^12.3.0",
-    "faker": "^5.5.3"
+    "@faker-js/faker": "^7.6.0",
+    "cypress": "^12.3.0"
   }
 }

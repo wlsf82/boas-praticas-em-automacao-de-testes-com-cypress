@@ -1,4 +1,4 @@
-const faker = require('faker')
+import { faker } from '@faker-js/faker'
 
 describe('Page Object bad practice', () => {
   const randomDestination = Math.floor(Math.random() * 15) + 1
